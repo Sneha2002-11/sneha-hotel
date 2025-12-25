@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hotel Booking - Step 2</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h2>Step 2: Select Room & Food</h2>
+
+<form onsubmit="goToConfirm(event)">
+
+    <h3>Room Selection:</h3>
+    <div class="room-cards">
+        <div class="card">
+            <img src="images/single.jpg" alt="Single Room">
+            <h4>Single Room</h4>
+            <p>Price: ₹1000/night</p>
+            <input type="radio" name="room" value="Single" required>
+        </div>
+
+        <div class="card">
+            <img src="images/double.jpg" alt="Double Room">
+            <h4>Double Room</h4>
+            <p>Price: ₹2000/night</p>
+            <input type="radio" name="room" value="Double">
+        </div>
+
+        <div class="card">
+            <img src="images/deluxe.jpg" alt="Deluxe Room">
+            <h4>Deluxe Room</h4>
+            <p>Price: ₹3000/night</p>
+            <input type="radio" name="room" value="Deluxe">
+        </div>
+    </div>
+
+    <h3>Food Menu:</h3>
+    <div class="food-cards">
+        <div class="card">
+            <p>Breakfast</p>
+            <input type="checkbox" class="food" value="Breakfast">
+        </div>
+
+        <div class="card">
+            <p>Lunch</p>
+            <input type="checkbox" class="food" value="Lunch">
+        </div>
+
+        <div class="card">
+            <p>Dinner</p>
+            <input type="checkbox" class="food" value="Dinner">
+        </div>
+    </div>
+
+    <button type="submit">Next</button>
+</form>
+
+<script src="booking.js"></script>
+</body>
+</html>

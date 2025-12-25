@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sneha Hotel Reservation - Step 1</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h1>Sneha Hotel Reservation</h1>
+<h2>Step 1: Your Details</h2>
+
+<form onsubmit="goToBooking(event)">
+    <input type="text" id="name" placeholder="Your Name" required><br><br>
+    <label>Check-in Date:</label>
+    <input type="date" id="checkin" required><br><br>
+    <label>Check-out Date:</label>
+    <input type="date" id="checkout" required><br><br>
+    <button type="submit">Next</button>
+</form>
+
+<script src="index.js"></script>
+</body>
+</html>
